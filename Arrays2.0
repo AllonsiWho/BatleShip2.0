@@ -24,99 +24,101 @@ void SetCursor(int x, int y)
 }
 int menu();
 int menu2();
-//Объявление одинарного массива
+//Объявление одинарного массива Рандом
 void FillRand(int mas[], int n, int a, int b);
 void FillRand(double mas[], int n, int a, int b);
 void FillRand(float mas[], int n, int a, int b);
 void FillRand(char mas[], int n, int a, int b);
-//Объявление двойного массива
+//Объявление двойного массива Рандом 
 void FillRand(int mas[line][colum], int n, int a);
 void FillRand(double mas[line][colum], int n, int a);
 void FillRand(float mas[line][colum], int n, int a);
 void FillRand(char mas[line][colum], int n, int a);
-//Объвявление одинарного массива
+//Объвявление одинарного массива Рисовка
 void Prit(int mas[], int n);
 double Prit(double mas[], int n);
 float Prit(float mas[], int n);
 char Prit(char mas[], int n);
-//Объявление двойного массива
+//Объявление двойного массива Рисовка
 void Print(int mas[line][colum], int n, int a);
 void Print(double mas[line][colum], int n, int a);
 void Print(float mas[line][colum], int n, int a);
 void Print(char mas[line][colum], int n, int a);
-//Объявление Одинарного массива
+//Объявление Одинарного массива Сумма 
 int Sum(int mas[], int n);
 double Sum(double mas[], int n);
 float Sum(float mas[], int n);
 char Sum(char mas[], int n);
-//Объявление Одинарного массива
+//Объявление Одинарного массива Сумма
 int Sum(int mas[line][colum], int n, int a);
 double Sum(double mas[line][colum], int n, int a);
 float Sum(float mas[line][colum], int n, int a);
 char Sum(char mas[line][colum], int n, int a);
-//Объявление Одинарного массива
+//Объявление Одинарного массива Среднее значение
 int Avg(int Sum, int n);
 double Avg(double Sum, int n);
 float Avg(float Sum, int n);
 char Avg(char Sum, int n);
-//Объявление двойного массива
+//Объявление двойного массива Среднее значение
 int Avg(int Sum, int n, int a);
 double Avg(double Sum, int n, int a);
 float Avg(float Sum, int n, int a);
 char Avg(char Sum, int n, int a);
-//Объявление Одинарного массива
+//Объявление Одинарного массива Мин значение
 int minValueln(int mas[], int n);
 double minValueln(double mas[], int n);
 float minValueln(float mas[], int n);
 char minValueln(char mas[], int n);
-//Объявление двойного массива
+//Объявление двойного массива Мин значение
 int minValueln(int mas[line][colum], int n, int a);
 double minValueln(double mas[line][colum], int n, int a);
 float minValueln(float mas[line][colum], int n, int a);
 char minValueln(char mas[line][colum], int n, int a);
-//Объявление Одинарного массива
+//Объявление Одинарного массива Макс значение
 int maxValueln(int mas[], int n);
 double maxValueln(double mas[], int n);
 float maxValueln(float mas[], int n);
 char maxValueln(char mas[], int n);
-//Объявление двойного массива
+//Объявление двойного массива Макс значение
 int maxValueln(int mas[line][colum], int n, int a);
 double maxValueln(double mas[line][colum], int n, int a);
 float maxValueln(float mas[line][colum], int n, int a);
 char maxValueln(char mas[line][colum], int n, int a);
-//Объявление Одинарного массива
+//Объявление Одинарного массива Сортировка
 void Sort(int mas[], int n);
 double Sort(double mas[], int n);
 float Sort(float mas[], int n);
 char Sort(char mas[], int n);
-//Объявление двойного массива
+//Объявление двойного массива Сортировка
 void Sort(int mas[line][colum], int n, int a);
 void Sort(double mas[line][colum], int n, int a);
 void Sort(float mas[line][colum], int n, int a);
 void Sort(char mas[line][colum], int n, int a);
-//Объявление Одинарного массива
+//Объявление Одинарного массива Уникальн Рандом
 void UniqueRand(int mas[], int n, int a, int b);
 double UniqueRand(double mas[], int n, int a, int b);
 float UniqueRand(float mas[], int n, int a, int b);
 char UniqueRand(char mas[], int n, int a, int b);
-//Объявление двойного массива
+//Объявление двойного массива Уникальный Рандом
 void UniqueRand(int mas[line][colum], int n, int a);
 void UniqueRand(double mas[line][colum], int n, int a);
 void UniqueRand(float mas[line][colum], int n, int a);
 void UniqueRand(char mas[line][colum], int n, int a);
-//Объявление Одинарного массива
+//Объявление Одинарного массива Повторение
 void Search(int mas[], int n);
 double Search(double mas[], int n);
 float Search(float mas[], int n);
 char Search(char mas[], int n);
-//Объявление двойного массива
+//Объявление двойного массива Повторение
 void Search(int mas[line][colum], int n, int a);
 void Search(double mas[line][colum], int n, int a);
 void Search(float mas[line][colum], int n, int a);
 void Search(char mas[line][colum], int n, int a);
-
+//Объявление Сдвиг одинарного массива
 void Shift_Left_And_Right(int mas[], int n);
+//Объявление Сдвиг двойного массива
 void Shift_Left_And_Right(int mas[line][colum], int n, int a);
+
 
 int main()
 {
@@ -138,6 +140,27 @@ int main()
 
     int poz = 0, poz2=0;
     int key;
+    SetColor(LightBlue, Black);//Заставка
+    for (int i = -10 + 1; i < 10; i++)
+    {
+
+        for (int j = -10 + 1; j < 10; j++)
+        {
+            if (abs(j) + 1 >= 10 - abs(i))
+            {
+                cout << (char)(64 + (10 - abs(j))) << " ";
+            }
+            else
+            {
+                cout << "  ";
+            }
+            Sleep(1);
+        }
+
+        cout << endl;
+    }
+    SetColor(White, Black);
+    Sleep(200);
     do
     {
         system("cls");
@@ -535,7 +558,8 @@ int main()
 
     } while (poz != 5);
 }
-//реализация Массива
+
+//реализация Массива Рандом
 void FillRand(int mas[], int n, int a, int b)
 {
     srand(time(NULL));
@@ -576,7 +600,7 @@ void FillRand(char mas[], int n, int a, int b)
     }
 
 }
-//Реализация двойного массива
+//Реализация двойного массива 
 void FillRand(int mas[line][colum], int n, int a)
 {
     srand(time(NULL));
@@ -631,7 +655,7 @@ void FillRand(char mas[line][colum], int n, int a)
     }
 
 }
-//Реализация Массива
+//Реализация Массива Рисовка
 void Prit(int mas[], int n)
 {
     for (int i = -0; i < n; i++)
@@ -726,7 +750,7 @@ void Print(char mas[line][colum], int n, int a)
         cout << endl;
     }
 }
-//Реализация одинарного массива
+//Реализация одинарного массива Сумма
 int Sum(int mas[], int n)
 {
     int Sum = 0;
@@ -857,7 +881,7 @@ char Sum(char mas[line][colum], int n, int a)
 
     return Sum;
 }
-//Реализация одинарного массива
+//Реализация одинарного массива Среднее значение
 int Avg(int Sum, int n)
 {
     int Avg = 0;
@@ -908,7 +932,7 @@ char Avg(char Sum, int n, int a)
     n = n * a;
     return Sum / n;
 }
-//Реализация одинарного массива
+//Реализация одинарного массива Мин значение
 int minValueln(int mas[], int n)
 {
     int Min = mas[0];
@@ -1060,7 +1084,7 @@ char minValueln(char mas[line][colum], int n, int a)
 
     return Min;
 }
-//Реализация одинарного массива
+//Реализация одинарного массива Макс значение
 int maxValueln(int mas[], int n)
 {
 
@@ -1228,7 +1252,7 @@ char maxValueln(char mas[line][colum], int n, int a)
 
     return Max;
 }
-//Реализация одинарного массива
+//Реализация одинарного массива Сортировка
 void Sort(int mas[], int n)
 {
     int boof = 0;
@@ -1296,8 +1320,8 @@ char Sort(char mas[], int n)
 void Sort(int mas[line][colum], int n, int a)
 {
     int boof = 0;
-
-    for (int i = 0; i < n; i++)
+    
+    /*for (int i = 0; i < n; i++)
     {
         for (int k = 0; k < a; k++)
         {
@@ -1328,15 +1352,40 @@ void Sort(int mas[line][colum], int n, int a)
             }
         }
         
-    }
+    }*/
     
+    for (int i = 0; i < n; i++)
+    {
+        for (int j = 0; j < a; j++)
+        {
+
+            for (int f = 0; f < n; f++)
+            {
+
+                for (int h = 0; h < a; h++)
+                {
+
+                    if (mas[f][h] > mas[i][j])
+                    {
+                        boof = mas[i][j];
+                        mas[i][j] = mas[f][h];
+                        mas[f][h] = boof;
+
+                    }
+                }
+            }
+
+
+
+        }
+    }
 
 }
 void Sort(double mas[line][colum], int n, int a)
 {
     double boof = 0;
 
-    for (int i = 0; i < n; i++)
+    /*for (int i = 0; i < n; i++)
     {
         for (int k = 0; k < a; k++)
         {
@@ -1367,13 +1416,39 @@ void Sort(double mas[line][colum], int n, int a)
             }
         }
 
+    }*/
+
+    for (int i = 0; i < n; i++)
+    {
+        for (int j = 0; j < a; j++)
+        {
+
+            for (int f = 0; f < n; f++)
+            {
+
+                for (int h = 0; h < a; h++)
+                {
+
+                    if (mas[f][h] > mas[i][j])
+                    {
+                        boof = mas[i][j];
+                        mas[i][j] = mas[f][h];
+                        mas[f][h] = boof;
+
+                    }
+                }
+            }
+
+
+
+        }
     }
 }
 void Sort(float mas[line][colum], int n, int a)
 {
     float boof = 0;
 
-    for (int i = 0; i < n; i++)
+   /* for (int i = 0; i < n; i++)
     {
         for (int k = 0; k < a; k++)
         {
@@ -1404,13 +1479,38 @@ void Sort(float mas[line][colum], int n, int a)
             }
         }
 
+    }*/
+    for (int i = 0; i < n; i++)
+    {
+        for (int j = 0; j < a; j++)
+        {
+
+            for (int f = 0; f < n; f++)
+            {
+
+                for (int h = 0; h < a; h++)
+                {
+
+                    if (mas[f][h] > mas[i][j])
+                    {
+                        boof = mas[i][j];
+                        mas[i][j] = mas[f][h];
+                        mas[f][h] = boof;
+
+                    }
+                }
+            }
+
+
+
+        }
     }
 }
 void Sort(char mas[line][colum], int n, int a)
 {
     char boof = ' ';
 
-    for (int i = 0; i < n; i++)
+    /*for (int i = 0; i < n; i++)
     {
         for (int k = 0; k < a; k++)
         {
@@ -1441,9 +1541,34 @@ void Sort(char mas[line][colum], int n, int a)
             }
         }
 
+    }*/
+    for (int i = 0; i < n; i++)
+    {
+        for (int j = 0; j < a; j++)
+        {
+
+            for (int f = 0; f < n; f++)
+            {
+
+                for (int h = 0; h < a; h++)
+                {
+
+                    if (mas[f][h] > mas[i][j])
+                    {
+                        boof = mas[i][j];
+                        mas[i][j] = mas[f][h];
+                        mas[f][h] = boof;
+
+                    }
+                }
+            }
+
+
+
+        }
     }
 }
-//Реализация одинарного массива
+//Реализация одинарного массива Уникальный Рандом
 void UniqueRand(int mas[], int n, int a, int b)
 {
     FillRand(mas, n, a, b);
@@ -1637,7 +1762,7 @@ void UniqueRand(char mas[line][colum], int n, int a)
 
     }
 }
-//Реализация одинарного массива
+//Реализация одинарного массива Повтор
 void Search(int mas[], int n)
 {
     int arr[10]{};
@@ -2022,7 +2147,7 @@ void Search(char mas[line][colum], int n, int a)
 
     }
 }
-
+//Реализация сдвиг одинарного массива
 void Shift_Left_And_Right(int mas[], int n)
 {
     int key;
@@ -2089,6 +2214,7 @@ void Shift_Left_And_Right(int mas[], int n)
 
 
 }
+// Реализация двойного массива
 void Shift_Left_And_Right(int mas[line][colum], int n, int a)
 {
     int key;
@@ -2128,11 +2254,14 @@ void Shift_Left_And_Right(int mas[line][colum], int n, int a)
             case Up:
             {
                 cool--;
+                size+2;
+
                 break;
             }
             case Down:
             {
                 cool++;
+                size-2;
                 break;
             }
             case Enter:
@@ -2154,7 +2283,7 @@ void Shift_Left_And_Right(int mas[line][colum], int n, int a)
         {
             cool = 3;
         }
-        if (cool > 3 )
+        if (cool > 3&&key==Down )
         {
             cool = 0;
         }
@@ -2192,6 +2321,7 @@ void Shift_Left_And_Right(int mas[line][colum], int n, int a)
 
 
 }
+//Меню
 int menu()
 {
     char menu[6][50] = { "Вывод массива и работа с ним","Движение массива","Сортировка массива","Заполнение массива уник числами","Нахожденеи повторений","Выход" };//Пункты меню
