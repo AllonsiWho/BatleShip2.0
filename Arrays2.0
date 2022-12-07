@@ -2158,7 +2158,7 @@ void Shift_Left_And_Right(int mas[], int n)
 
         for (int i = 0; i < 10; i++)
         {
-
+            
 
             cout << mas[i] << "\t";
         }
@@ -2226,11 +2226,28 @@ void Shift_Left_And_Right(int mas[line][colum], int n, int a)
         {
             for (int j = 0; j < a; j++)
             {
+                if (cool == 0&&i==0)
+                {
+                    SetColor(Red, Black);
+                }
+                if (cool == 1&&i==1)
+                {
+                    SetColor(Red, Black);
+                }
+                if (cool == 2&&i==2)
+                {
+                    SetColor(Red, Black);
+                }
+                if (cool == 3&&i==3)
+                {
+                    SetColor(Red, Black);
+                }
 
+                
                 cout << mas[i][j] << "\t";
             }
             cout << endl;
-
+            SetColor(White, Black);
         }
 
         cout << endl;
